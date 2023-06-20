@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Js</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilotienda.css">
+</head>
+<body>
+    <header>
+        <div class="header-section container">
+            <a href="index.html" onclick="history.back(); return false;">
+                <img src="./images/logoShop.png" alt="" class="back-icon">
+              </a>
+            <div>
+                <img onclick="showCart(this)" class="cart" src="./images/cart.jpg" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Mi carrito</h3>
+                <div class="card-items">
+                </div>
+                <h2>Total: $<strong class="price-total">0</strong></h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./images/products/campera.jpg" alt="">
+                    <p><span>70000</span>$</p>
+                </div>
+                <p class="title">CAMPERA</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/dress.jpg" alt="">
+                    <p><span>37890</span>$</p>
+                </div>
+                <p class="title">VESTIDO</p>
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/zapas2.png" alt="">
+                    <p><span>65890</span>$</p>
+                </div>
+                <p class="title">ZAPATILLAS</p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/gorra.jpg" alt="">
+                    <p><span>15000</span>$</p>
+                </div>
+                <p class="title">GORRA</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/jeans.jpg" alt="">
+                    <p><span>68000</span>$</p>
+                </div>
+                <p class="title">JEANS</p>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/ojotas.jpg" alt="">
+                    <p><span>3278</span>$</p>
+                </div>
+                <p class="title">OJOTAS</p>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/pant.png" alt="">
+                    <p><span>46000</span>$</p>
+                </div>
+                <p class="title">PANTALON</p>
+                <a href="" data-id="7" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/pollera.png" alt="">
+                    <p><span>5000</span>$</p>
+                </div>
+                <p class="title">POLLERA</p>
+                <a href="" data-id="8" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/pulover.png" alt="">
+                    <p><span>45000</span>$</p>
+                </div>
+                <p class="title">PULOVER</p>
+                <a href="" data-id="9" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/remera.png" alt="">
+                    <p><span>3400</span>$</p>
+                </div>
+                <p class="title">REMERA</p>
+                <a href="" data-id="10" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/zapas1.png" alt="">
+                    <p><span>20000</span>$</p>
+                </div>
+                <p class="title">ZAPATILLAS</p>
+                <a href="" data-id="11" class="btn-add-cart">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pie">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 footer-about wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                <p class=" text-black">
+                  Trabajo Grupal-Diseño y Desarollo Web.
+                </p>
+                <p class="h4 text-black">Integrantes: Lourdes Avalos, Nina Ciminelli, Ayelen Erlan y Johanna Fanara</p>
+                <p class="text-black"><em><small>Derechos reservados</small></em></p>
+                <p class="h6 col-1 text-black"><i class="fas fa-map-marker-alt"></i><img src="./img/instagram.png" class="img-fluid" alt="..."><br><a href="https://www.instagram.com/khalaclothesteam/" target="_blank">khalaclothesteam</a></p>
+                <p class="h5 col-1 text-black"><i class="fas fa-map-marker-alt"></i><img src="./img/email.png" class="img-fluid" alt="..."><br><a href=" https://accounts.google.com/v3/signin/identifier?dsh=S889801422%3A1687284923168904&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=Af_xneE8i-piwyxmOi9X39iNpvBtLri_y-olXimiO-XDNXLtjbECe7Z7SfnXD9Vwxn4S8kxat5qw&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">KhalaClothesTeam@gmail.com</a></p>  
+                    </div>
+              <div class="col-md-6 text-end offset-md-1 footer-contact wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3 ><br><a href=https://johanna-fanara.github.io/sitio.del.grupo/ class="figma" target="_blank"> enlace al sitio del grupo</a></h3>
+                    <p class="h6 text-black"><i class="fas fa-map-marker-alt"></i><br><a href="https://www.istockphoto.com/es" target="_blank">https://www.istockphoto.com/es</a></p>
+                    <img src="./img/uade.png" class="img-fluid uade" alt="...">
+                    </div>
+            </div>          
+        </div>          
+      </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./custom.js" ></script>
+</body>
+</html>
